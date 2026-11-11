@@ -4,11 +4,14 @@ Containerfile
 
 ## 基础镜像
 
-选择SUSE的镜像更容易构建：
+（1）选择SUSE的镜像更容易构建：
 
 [Elemental - Immutable Linux for Rancher](https://elemental.docs.rancher.com/custom-images/)
 
-选择openSUSE的镜像更容易自定义：
+但是要忍受sl-micro后台服务带来的不便，而且有的时候仅仅屏蔽这些服务又会带来新的问题。
+
+
+（2）选择openSUSE的镜像更容易自定义：
 
 [Portal:Container/Base Container - openSUSE Wiki](https://en.opensuse.org/Portal:Container/Base_Container)
 
