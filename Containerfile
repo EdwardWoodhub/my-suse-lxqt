@@ -26,7 +26,8 @@ RUN zypper --non-interactive --gpg-auto-import-keys refresh && \
         lxqt-wayland-session \
         lxqt-labwc-session \
         meld \
-        # 虚拟化集成支持（open-vm-tools-desktop 支持 Wayland 剪贴板与分辨率自适应）
+        Mesa \
+        Mesa-dri \
         open-vm-tools \
         open-vm-tools-desktop \
         # LXQt 核心桌面与会话
