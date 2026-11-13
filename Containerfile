@@ -9,6 +9,7 @@ RUN zypper --non-interactive ar -cfp 90 https://download.opensuse.org/distributi
 # 3. 导入 GPG 密钥并安装 XFCE 桌面环境与 sddm
 RUN zypper --non-interactive --gpg-auto-import-keys refresh && \
     zypper --non-interactive in \
+        7zip \
         adwaita-icon-theme \
         btop \
         fastfetch \
