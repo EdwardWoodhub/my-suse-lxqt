@@ -20,7 +20,6 @@ RUN zypper --non-interactive --gpg-auto-import-keys refresh && \
         htop \
         kanshi \
         konsole \
-        # Wayland 核心与合成器
         labwc \
         lxqt-session \
         lxqt-wayland-session \
@@ -28,26 +27,21 @@ RUN zypper --non-interactive --gpg-auto-import-keys refresh && \
         meld \
         Mesa \
         Mesa-dri \
+        # NetworkManager \ #默认有安装，不用显示安装
         open-vm-tools \
         open-vm-tools-desktop \
-        # LXQt 核心桌面与会话
         patterns-lxqt-lxqt \
         python3 \
-        # Qt Wayland 平台插件（LXQt 必须依赖此项以 Wayland 模式启动）
         qt6-wayland \
-        # Qt/LXQt 生态常用终端与编辑器（可替代 gedit/pluma/xfce4-terminal）
         qterminal \
-        # 显示管理器 (SDDM 在 Wayland 下表现良好)
         sddm \
         slurp \
         screengrab \
         syncthing \
         uv \
         wqy-microhei-fonts \
-        # 显示输出控制与图形管理
         wlr-randr \
         wdisplays \
-        # 屏幕截图与剪贴板支持
         wl-clipboard \
         xwayland && \
     fc-cache -f && \
